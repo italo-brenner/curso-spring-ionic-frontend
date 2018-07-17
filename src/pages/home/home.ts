@@ -10,7 +10,6 @@ import { MenuController } from '../../../node_modules/ionic-angular/components/a
 export class HomePage {
 
   constructor(public navCtrl: NavController, public menu: MenuController) {
-
   }
 
   ionViewWillEnter() {
