@@ -24,6 +24,16 @@ export class AuthService {
             });
     }
 
+    refreshToken(creds : CredenciaisDTO) {
+        return this.http.post(
+            `${API_CONFIG.baseUrl}/auth/refresh_token`,
+            {},
+            {
+                observe: 'response',
+                responseType: 'text'
+            });
+    }
+
     successfulLogin(authorizationValue : string) {
         let vToken = authorizationValue.substring(7);
         let user : LocalUser = {
