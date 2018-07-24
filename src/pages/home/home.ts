@@ -50,4 +50,8 @@ export class HomePage {
     console.log(this.creds);
   }
 
+  signup() {
+    this.navCtrl.push('SignupPage');
+  }
+
 }
